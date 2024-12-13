@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header{
+  width: 100%;
+  height: 9vh;
+  padding: 5px 5%;
+  background: blueviolet;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.header .links{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 30px;
+}
+.header .links a{
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+.header .links a:hover{
+  box-shadow: inset 0px 0px 10px white; 
+}
+.header .links a:last-child{
+  padding: 8px 10px;
+  background:transparent;
+  border-radius: 5px;
+  border: 2px solid white;
+}
+.header .links a:last-child:hover{
+  background-color: white;
+  color: black;
+}
+.home{
+  width: 100%;
+  height: 90vh;
+  background-color: rgba(129, 65, 189, 0.382);
+  display: grid;
+  place-content: center;
+  gap: 5%;
+  text-align: center;
+}
+.home h2{
+  font-size: 30px;
+  font-weight: bold;
+  color: crimson;
+  text-shadow: 0px 15px 10px rgb(242, 122, 146);
+}
+.home h3{
+  font-size: 22px;
+  font-weight: bold;
+  text-shadow: 0px 15px 15px rgb(84, 80, 81);
+}
+.home .fd{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-spacing-trim: normal;
+}
+.about{
+  width: 100%;
+  height: 98vh;
+  background-color: rgb(198, 148, 245);
+  padding: 20px;
+}
+.about h2{
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+.about .boxes{
+  width: 100%;
+  height: 90%;
+  padding: 20px;
+  background:transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:20px;
+}
+.about .boxes .box{
+  width: 50%;
+  height: 80%;
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  box-shadow: 0px 0px 10px black;
+  border-radius: 5px;
+  display: grid;
+  place-items: start;
+}
+.about .boxes p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  font-size: 18px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.about .boxes .box h2{
+  margin: 40px auto;
+  padding: 10px 40px;
+  border-radius: 5px;
+  box-shadow: inset 0px 0px 10px blueviolet;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
